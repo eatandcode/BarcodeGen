@@ -1,13 +1,14 @@
 <html>
 
 <body>
-	<!--<input type="button" id="script" name="scriptbutton" value="run script" onclick="goPython()">-->
+	<input type="button" id="script" name="scriptbutton" value="run script" onclick="goPython()">
 
 	<!--<script src="http://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
 	<script>
+		/*
 		$(document).ready(function(){
 			$("button").click(function(){
 				$.ajax({
@@ -18,18 +19,15 @@
 				});
 			});
 		});
-/*
+*/
 		function goPython(){
 			$.ajax({
-				url:"barcode_maker.py",
-				context: document.body
-				}).done(function() {
-				alert('finished python script');;
-			})
-	}
-	*/
+				url:"barcode_maker.py"
+				});
+		}
+	
 	</script>
-	<button>barcode button</button>
+	
 <!-- <div id="div1"><h2>result here</h2></div> -->
 </body>
 
