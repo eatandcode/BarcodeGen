@@ -1,12 +1,13 @@
 <html>
 
 <body>
-	<input type="button" id="script" name="scriptbutton" value="run script" onclick="goPython()">
+	<!--<input type="button" id="script" name="scriptbutton" value="run script" onclick="goPython()">-->
+
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 	<script>
 		$(document).ready(function(){
-			$("input").click(function(){
+			$("button").click(function(){
 				$.ajax({
 					url: "barcode_maker.py", success:function(result){
 						$("#div1").html(result);
@@ -25,6 +26,7 @@
 	}
 	*/
 	</script>
+	<button>barcode button</button>
 <div id="div1"><h2>result here</h2></div>
 </body>
 
