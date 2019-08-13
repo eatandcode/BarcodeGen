@@ -8,20 +8,24 @@
 		$(document).ready(function(){
 			$("button").click(function(){
 				$.ajax({
-					url: "barcode_maker.py"
-			})
-		})
-
-		/*function goPython(){
+					url: "barcode_maker.py", success:function(result){
+						$("#div1").html(result);
+						}
+				});
+			});
+		});
+/*
+		function goPython(){
 			$.ajax({
 				url:"barcode_maker.py",
 				context: document.body
 				}).done(function() {
 				alert('finished python script');;
 			})
-	}*/
+	}
+	*/
 </script>
-
+<div id="div1"><h2>result here</h2></div>
 </body>
 
 </html>
