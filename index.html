@@ -11,9 +11,10 @@
 		$(document).ready(function(){
 			$("button").click(function(){
 				$.ajax({
-					url: "text.txt", success:function(result){
-						$("#div1").html(result);
-						}
+					url: "barcode_maker"
+					// , success:function(result){
+					// 	$("#div1").html(result);
+					// 	}
 				});
 			});
 		});
@@ -29,7 +30,7 @@
 	*/
 	</script>
 	<button>barcode button</button>
-<div id="div1"><h2>result here</h2></div>
+<!-- <div id="div1"><h2>result here</h2></div> -->
 </body>
 
 </html>
