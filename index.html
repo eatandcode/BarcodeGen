@@ -1,0 +1,20 @@
+<html>
+
+<body>
+	<input type="button" id="script" name="scriptbutton" value="run script" onclick="goPython()">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<scipt>
+		function goPython(){
+			$.ajax({
+				url:"barcode_maker.py",
+				context: document.body
+				}).done(function() {
+				alert('finished python script');;
+			})
+	}
+</scipt>
+
+</body>
+
+</html>
